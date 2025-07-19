@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 text-white min-h-screen flex items-center justify-center">
+  <div class="bg-zinc-800 p-10 rounded-xl shadow-xl max-w-md w-full">
+    <h1 class="text-3xl font-bold mb-6 text-center text-blue-400">Welcome, <%= user.Name %> </h1>
+    
+    <div class="space-y-4">
+      <p><span class="font-semibold">Email:</span> <%= user.email %></p>
+      <p><span class="font-semibold">Username:</span> <%= user.username %></p>
+    </div>
+
+    <div class="mt-8 text-center">
+      <a href="/" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg text-white font-semibold">Log Out</a>
+    </div>
+  </div>
+</body>
+</html>
